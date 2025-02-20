@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab Protocols - Md. Mustak Khan</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .protocol {
+            background: #e0f7fa; /* Light Cyan */
+            border-radius: 10px;
+            padding: 20px;
+            margin: 10px 0;
+            transition: transform 0.3s;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        }
+        .protocol:hover {
+            transform: scale(1.02);
+            background: #b2ebf2; /* Darker Cyan on hover */
+        }
+        .step {
+            background: #f9fbe7; /* Light Yellow */
+            border: 1px solid #cddc39;
+            border-radius: 5px;
+            padding: 10px;
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-left">
+                <a href="index.html" class="nav-logo">MK</a>
+                <div class="search-container">
+                    <input type="text" placeholder="Search..." class="search-input">
+                    <button class="search-btn">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="nav-links">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="research.html" class="nav-link">Research</a>
+                <a href="publications.html" class="nav-link">Publications</a>
+                <a href="people.html" class="nav-link">People</a>
+                <a href="lab-protocols.html" class="nav-link active">Lab Protocols</a>
+                <div class="dropdown">
+                    <button class="nav-link dropdown-btn">More
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="resources.html" class="dropdown-link">Resources & Tools</a>
+                        <a href="gallery.html" class="dropdown-link">Gallery</a>
+                    </div>
+                </div>
+                <button id="themeToggle" class="theme-toggle">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+            <button class="mobile-menu">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Lab Protocols Section -->
+    <section class="lab-protocols-section">
+        <div class="container">
+            <h1 class="section-title">Laboratory Methods and Protocols</h1>
+            <p>I share standardized experimental protocols for C. elegans studies and microalgae research, ensuring accuracy and reproducibility. Each method includes step-by-step instructions, required reagents, and troubleshooting tips for wet lab research.</p>
+
+            <div class="protocol">
+                <h2>Protocol 01: Cryopreservation and Recovery Protocol for Caenorhabditis elegans</h2>
+                <p>Cryopreservation is an essential method for maintaining C. elegans strains over long periods. Freezing nematodes properly ensures their viability upon thawing, allowing for reliable revival and continued research.</p>
+                <h3>Materials Required</h3>
+                <ul>
+                    <li>C. elegans cultures</li>
+                    <li>Nematode Growth Medium (NGM) plates seeded with E. coli OP50</li>
+                    <li>M9 buffer (Composition: NaCl, KH₂PO₄, Na₂HPO₄, H₂O)</li>
+                    <li>Freezing solution: Soft Agar Freezing Solution</li>
+                    <li>Cryovials (1.5–2 ml)</li>
+                    <li>Ice bucket</li>
+                    <li>Sterilized metal spatula</li>
+                    <li>-80°C freezer or liquid nitrogen storage</li>
+                </ul>
+                <h3>Step-by-Step Protocol</h3>
+                <ol>
+                    <li class="step"><strong>Culturing Worms:</strong> Grow C. elegans on NGM plates with E. coli OP50. Incubate at 20°C until worms reach the just-starved L1-L2 stage.</li>
+                    <li class="step"><strong>Harvesting Worms:</strong> Wash each plate with 1.5 ml of M9 buffer to collect worms. Transfer suspensions to a 15 ml conical tube.</li>
+                    <li class="step"><strong>Cooling and Mixing:</strong> Place the tube on ice for 15 minutes. Add an equal volume (3 ml) of the pre-warmed Soft Agar Freezing Solution.</li>
+                    <li class="step"><strong>Aliquoting and Freezing:</strong> Transfer 1.5 ml of the mixture into labeled cryovials. Store vials in a styrofoam box at -80°C for slow cooling.</li>
+                </ol>
+                <h3>Recovery Procedure</h3>
+                <ol>
+                    <li class="step"><strong>Thawing:</strong> Retrieve a cryovial from storage. Thaw rapidly at room temperature.</li>
+                    <li class="step"><strong>Plating and Incubation:</strong> Transfer thawed suspension onto a seeded NGM plate. Incubate at 20°C for 48–72 hours.</li>
+                </ol>
+                <h3>Key Considerations</h3>
+                <ul>
+                    <li>Use of Glycerol: Reduces ice crystal formation, preventing cellular damage during freezing.</li>
+                    <li>Cooling Rate: A slow cooling rate is essential for worm viability; rapid freezing results in poor survival.</li>
+                    <li>Optimal Worm Stage: L1-L2 stage worms have the highest post-thaw survival rate.</li>
+                    <li>Labeling: Always label cryovials with strain information and date.</li>
+                </ul>
+                <h3>References</h3>
+                <ul>
+                    <li>Protocols.io (2020). <a href="https://www.protocols.io/view/freezing-worms-bhwfj7bn">Freezing worms protocol</a>.</li>
+                    <li>Hayden, J., et al. (2021). <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC8546488/">Cryopreservation of dehydrated Caenorhabditis elegans</a>.</li>
+                </ul>
+            </div>
+
+            <div class="protocol">
+                <h2>Protocol 02: Bleaching C. elegans to Obtain Eggs and L1s</h2>
+                <p>Bleach solution will kill worms but will not destroy eggs because they contain a protective eggshell.</p>
+                <h3>CAUTION:</h3>
+                <p>While handling bleach, wear gloves, goggles, and a lab coat.</p>
+                <h3>Materials</h3>
+                <ul>
+                    <li>Bleach</li>
+                    <li>Sodium hydroxide (NaOH)</li>
+                    <li>1× M9 buffer (Dilute 10× M9 1:10 before using; sterile)</li>
+                    <li>Adult gravid hermaphrodites</li>
+                    <li>100-mm seeded plates for recovery</li>
+                </ul>
+                <h3>Step-by-Step Protocol</h3>
+                <ol>
+                    <li class="step"><strong>Prepare Fresh Bleach/NaOH Solution:</strong> (Do not use if older than 1 week.)</li>
+                    <li class="step"><strong>Harvest Gravid Worms:</strong> Wash gravid worms from plates with 1× M9 buffer into a 15-ml conical tube.</li>
+                    <li class="step"><strong>Bleaching Treatment:</strong> Add 3 ml of bleach/NaOH mix and monitor adult lysis under a microscope.</li>
+                    <li class="step"><strong>Egg Recovery:</strong> Immediately spin for no more than 1 min at 3000 rpm.</li>
+                </ol>
+                <h3>References</h3>
+                <ul>
+                    <li>Porta-de-la-Riva M, et al. Basic Caenorhabditis elegans Methods: Synchronization and Observation.</li>
+                </ul>
+            </div>
+
+            <div class="protocol">
+                <h2>Protocol 03: Generating Males by Heat Shock</h2>
+                <p>Males arise spontaneously from hermaphrodite self-fertilization at about 1 in 500 eggs laid.</p>
+                <h3>Materials</h3>
+                <ul>
+                    <li>Six or more plates with at least five L4 hermaphrodites of the desired genotype on each</li>
+                    <li>Incubator at 30°C</li>
+                </ul>
+                <h3>Step-by-Step Protocol</h3>
+                <ol>
+                    <li class="step"><strong>Incubate the plates:</strong> with the L4 hermaphrodites for 4 to 6 hours at 30°C.</li>
+                    <li class="step"><strong>Return the plates:</strong> to 20°C. After 3 days, screen the plates for males.</li>
+                </ol>
+                <h3>References</h3>
+                <ul>
+                    <li>ScienceDirect. Cryopreservation of nematodes using vitrification.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Md. Mustak Khan. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
