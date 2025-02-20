@@ -67,6 +67,9 @@ body {
     line-height: 1.6;
     scroll-behavior: smooth;
     padding-top: 70px; /* Adjust this value based on the height of your navbar */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure body takes at least full viewport height */
 }
 
 .scroll-to-top {
@@ -597,6 +600,7 @@ body {
     padding: 2rem 0;
     text-align: center;
     color: var(--text-light);
+    margin-top: auto; /* Push footer to the bottom */
 }
 
 /* Responsive Design */
