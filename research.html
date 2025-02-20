@@ -10,14 +10,25 @@
     <style>
         .research-content {
             display: flex;
-            flex-direction: row;
+            align-items: flex-start; /* Align items to the start */
+            margin-bottom: 20px;
         }
         .research-image {
-            width: 50%;
+            width: 30%; /* Reduced width for better alignment */
+            height: auto; /* Maintain aspect ratio */
             margin-right: 20px;
+            border-radius: 8px; /* Add rounded corners */
+            transition: transform 0.3s; /* Add hover effect */
         }
-        figure {
-            width: 50%;
+        .research-image:hover {
+            transform: scale(1.05); /* Scale up on hover */
+        }
+        .research-area {
+            margin-bottom: 40px; /* Add space between sections */
+            background: linear-gradient(135deg, #e0e7ff, #f9fafb); /* Interactive background */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
         }
     </style>
 </head>
@@ -67,8 +78,7 @@
             <div class="research-content">
                 <img src="C elegans.png" alt="C. elegans" class="research-image">
                 <div>
-                    <p>At the Laboratory of Microbial Research, we use Caenorhabditis elegans (C. elegans) to study microbial interactions and host-pathogen dynamics. This model organism’s simplicity and genetic tractability enable us to uncover key molecular mechanisms underlying health and disease. By combining experimental biology with advanced analytics, we aim to advance understanding of infectious diseases and therapeutic strategies. This work marks a significant step in Bangladesh’s microbiological research, contributing to global efforts in disease management and human health.
-</p>
+                    <p>At the Laboratory of Microbial Research, we use Caenorhabditis elegans (C. elegans) to study microbial interactions and host-pathogen dynamics. This model organism’s simplicity and genetic tractability enable us to uncover key molecular mechanisms underlying health and disease. By combining experimental biology with advanced analytics, we aim to advance understanding of infectious diseases and therapeutic strategies. This work marks a significant step in Bangladesh’s microbiological research, contributing to global efforts in disease management and human health.</p>
                     <figure>
                         <figcaption>Figure: C. elegans</figcaption>
                     </figure>
@@ -98,7 +108,7 @@
             <div class="research-content">
                 <img src="Bioinformatics.png" alt="Our Bioinformatics Research Area" class="research-image">
                 <div>
-                    <p>At BioPC - A Bioinformatics Lab of Research and Training, our research utilizes computational and systems biology approaches to accelerate drug discovery, optimize vaccine design, and perform comprehensive pan-cancer analysis. By integrating multi-omics data, we aim to uncover novel therapeutic targets and biomarkers for complex diseases. In drug discovery, we focus on predicting compound efficacy and safety, while in vaccine design, we employ immunoinformatics to identify effective antigen candidates. Our pan-cancer analysis reveals shared molecular signatures across cancers, deepening our understanding of tumor heterogeneity and guiding precision medicine strategies. Through innovative computational tools and biomedical research, we strive to advance disease prevention, diagnosis, and treatment..</p>
+                    <p>At BioPC - A Bioinformatics Lab of Research and Training, our research utilizes computational and systems biology approaches to accelerate drug discovery, optimize vaccine design, and perform comprehensive pan-cancer analysis. By integrating multi-omics data, we aim to uncover novel therapeutic targets and biomarkers for complex diseases. In drug discovery, we focus on predicting compound efficacy and safety, while in vaccine design, we employ immunoinformatics to identify effective antigen candidates. Our pan-cancer analysis reveals shared molecular signatures across cancers, deepening our understanding of tumor heterogeneity and guiding precision medicine strategies. Through innovative computational tools and biomedical research, we strive to advance disease prevention, diagnosis, and treatment.</p>
                     <figure>
                         <figcaption>Figure: Our Bioinformatics Research Area</figcaption>
                     </figure>
