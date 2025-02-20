@@ -2,6 +2,12 @@
 const themeToggle = document.getElementById('themeToggle');
 const body = document.body;
 
+// Create scroll to top button
+const scrollButton = document.createElement('button');
+scrollButton.className = 'scroll-to-top';
+scrollButton.innerHTML = '<i class="fas fa-arrow-up"></i>';
+document.body.appendChild(scrollButton);
+
 // Check for saved theme preference
 const savedTheme = localStorage.getItem('theme');
 if (savedTheme) {
@@ -57,4 +63,45 @@ const observer = new IntersectionObserver((entries) => {
 // Observe all sections
 document.querySelectorAll('section').forEach(section => {
     observer.observe(section);
+});
+
+// Scroll to top functionality
+window.addEventListener('scroll', () => {
+    if (window.pageYOffset > 300) {
+        scrollButton.classList.add('visible');
+    } else {
+        scrollButton.classList.remove('visible');
+    }
+});
+
+scrollButton.addEventListener('click', () => {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+});
+
+// Enhanced mobile menu
+const handleMobileMenu = () => {
+    navLinks.classList.toggle('active');
+    const isOpen = navLinks.classList.contains('active');
+    mobileMenuBtn.innerHTML = isOpen ? '<i class="fas fa-times"></i>' : '<i class="fas fa-bars"></i>';
+};
+
+mobileMenuBtn.addEventListener('click', handleMobileMenu);
+
+// Close mobile menu when clicking outside
+document.addEventListener('click', (e) => {
+    if (navLinks.classList.contains('active') && 
+        !e.target.closest('.nav-links') && 
+        !e.target.closest('.mobile-menu')) {
+        handleMobileMenu();
+    }
+});
+
+// Add loading animation to research cards
+const researchCards = document.querySelectorAll('.research-card');
+researchCards.forEach((card, index) => {
+    card.style.animationDelay = `${index * 0.2}s`;
+    observer.observe(card);
 });
