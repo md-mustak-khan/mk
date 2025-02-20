@@ -7,6 +7,120 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        h1, h2, h3 {
+            color: #333;
+        }
+        .experience-card {
+            background: #fff;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .interactive-title {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+        .interactive-subtitle {
+            font-size: 1.2em;
+            margin-top: 10px;
+        }
+        .skills, .certificates {
+            margin-top: 20px;
+        }
+        .interactive-title {
+            transition: color 0.3s;
+        }
+        .interactive-title:hover {
+            color: #3f51b5;
+        }
+        .interactive-subtitle {
+            transition: color 0.3s;
+        }
+        .interactive-subtitle:hover {
+            color: #3f51b5;
+        }
+        .interactive-text {
+            transition: background 0.3s;
+            padding: 2px 4px;
+        }
+        .interactive-text:hover {
+            background: #e0e0e0;
+            border-radius: 4px;
+        }
+        .interactive-card {
+            transition: transform 0.3s, box-shadow 0.3s;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .interactive-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+        }
+        .certificate-card {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .certificate-info {
+            flex: 1;
+            padding-right: 20px;
+        }
+        .about-content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .bio-info {
+            flex: 2;
+            padding-left: 20px;
+        }
+        .academic-journey {
+            margin-top: 20px;
+            text-align: left;
+        }
+        .research-area {
+            text-align: left;
+        }
+        .experience-card {
+            text-align: left;
+        }
+        .skill-card {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .skill-card i {
+            font-size: 24px;
+            margin-right: 10px;
+        }
+        .skill-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 20px;
+        }
+        .skill-grid .skill-card {
+            display: flex;
+            align-items: center;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .skill-grid .skill-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+        }
+    </style>
 </head>
 <body>
     <!-- Navigation -->
@@ -51,13 +165,14 @@
     <section class="about-header" style="padding-top: 70px;">
         <div class="container">
             <h1 class="section-title">About Me</h1>
-            <div class="about-content" style="display: flex; align-items: center;">
-                <div class="bio-info" style="flex: 2; padding-left: 20px;">
-                    <h2 class="interactive-title">Md. Mustak Khan</h2>
+            <div class="experience-grid">
+                <h2>About Me</h2>
+                <div class="experience-card interactive-card">
+                    <h3 class="interactive-title">Md. Mustak Khan</h3>
                     <div class="academic-journey">
                         <h3 class="interactive-subtitle"><i class="fas fa-graduation-cap"></i> Academic Journey</h3>
-                        <p><strong>Current Status:</strong> <span class="interactive-text">M.Sc. student at Biochemistry and Molecular Biology, University of Chittagong, 4331-Chittagong, Bangladesh.</span></p>
-                        <p><strong>Undergraduate Degree:</strong> <span class="interactive-text">B.Sc. in Biochemistry and Molecular Biology, University of Chittagong, 4331-Chittagong, Bangladesh.</span></p>
+                        <p><strong>Current Status:</strong> M.Sc. student at Biochemistry and Molecular Biology, University of Chittagong, 4331-Chittagong, Bangladesh.</p>
+                        <p><strong>Undergraduate Degree:</strong> B.Sc. in Biochemistry and Molecular Biology, University of Chittagong, 4331-Chittagong, Bangladesh.</p>
                     </div>
                 </div>
             </div>
@@ -69,18 +184,19 @@
         <div class="container">
             <h2 class="section-title"><i class="fas fa-flask"></i> Research Experience</h2>
             <div class="experience-grid">
+                <h2>Research Experience</h2>
                 <div class="experience-card interactive-card">
-                    <h3>Laboratory of Microbial Research</h3>
+                    <h3 class="interactive-title">Laboratory of Microbial Research</h3>
                     <p><strong>Role:</strong> Research Assistant</p>
                     <p><strong>Research Area:</strong> Microalgae, C. elegans, Microbiology, Food and Nutrition</p>
                 </div>
                 <div class="experience-card interactive-card">
-                    <h3>The Laboratory of Artificial Intelligence in Health, CHIRAL Bangladesh</h3>
+                    <h3 class="interactive-title">The Laboratory of Artificial Intelligence in Health, CHIRAL Bangladesh</h3>
                     <p><strong>Role:</strong> Research Assistant</p>
                     <p><strong>Research Area:</strong> Smartphones and Wearables, Medical Imaging Analytics</p>
                 </div>
                 <div class="experience-card interactive-card">
-                    <h3>BioPC—A Bioinformatics Lab of Research and Training</h3>
+                    <h3 class="interactive-title">BioPC—A Bioinformatics Lab of Research and Training</h3>
                     <p><strong>Role:</strong> Research Assistant</p>
                     <p><strong>Research Area:</strong> Vaccine Design, Drug Discovery, Cancer Bioinformatics</p>
                 </div>
@@ -92,34 +208,35 @@
     <section class="skills">
         <div class="container">
             <h2 class="section-title"><i class="fas fa-tools"></i> Skills</h2>
-            <div class="skills-grid">
-                <div class="skill-card interactive-card">
-                    <i class="fas fa-vial"></i>
-                    <p>Laboratory Techniques: DNA Extraction, PCR, Microalgae Culture</p>
+            <div class="skill-grid">
+                <h2>Skills</h2>
+                <div class="skill-card">
+                    <i class="fas fa-flask"></i>
+                    <p><strong>Laboratory Techniques:</strong> DNA Extraction, PCR, Microalgae Culture</p>
                 </div>
-                <div class="skill-card interactive-card">
+                <div class="skill-card">
                     <i class="fas fa-code"></i>
-                    <p>Programming: Python, R</p>
+                    <p><strong>Programming:</strong> Python, R</p>
                 </div>
-                <div class="skill-card interactive-card">
+                <div class="skill-card">
                     <i class="fas fa-database"></i>
-                    <p>Bioinformatics Tools: NCBI, BLAST, Clustal Omega</p>
+                    <p><strong>Bioinformatics Tools:</strong> NCBI, BLAST, Clustal Omega</p>
                 </div>
-                <div class="skill-card interactive-card">
+                <div class="skill-card">
                     <i class="fas fa-chart-line"></i>
-                    <p>Data Analysis: Statistical modeling, visualization</p>
+                    <p><strong>Data Analysis:</strong> Statistical modeling, visualization</p>
                 </div>
-                <div class="skill-card interactive-card">
+                <div class="skill-card">
                     <i class="fas fa-tools"></i>
-                    <p>Survey Tools: KoboToolBox, Google Forms</p>
+                    <p><strong>Survey Tools:</strong> KoboToolBox, Google Forms</p>
                 </div>
-                <div class="skill-card interactive-card">
+                <div class="skill-card">
                     <i class="fas fa-file-alt"></i>
-                    <p>Analytics Software: SPSS, Microsoft Excel</p>
+                    <p><strong>Analytics Software:</strong> SPSS, Microsoft Excel</p>
                 </div>
-                <div class="skill-card interactive-card">
+                <div class="skill-card">
                     <i class="fas fa-file-word"></i>
-                    <p>Academic Writing Tools: Microsoft Word, Mendeley, Zotero</p>
+                    <p><strong>Academic Writing Tools:</strong> Microsoft Word, Mendeley, Zotero</p>
                 </div>
             </div>
         </div>
@@ -130,41 +247,27 @@
         <div class="container">
             <h2 class="section-title"><i class="fas fa-certificate"></i> Certificates</h2>
             <div class="certificate-grid">
+                <h2>Certificates</h2>
                 <div class="certificate-card interactive-card">
-                    <div class="certificate-info">
-                        <h3><a href="assets/certificate1.pdf" target="_blank">Python - Introduction to Data Science and Machine Learning A-Z</a></h3>
-                        <p><strong>Issued by:</strong> Yassin Marco MBA (Udemy)</p>
-                        <p><strong>Date:</strong> August, 2024</p>
-                        <p>Description: Covers Python programming basics and fundamentals of data science.</p>
-                    </div>
-                    <a href="assets/certificate1.pdf" target="_blank">
-                        <img src="Python.jpg" alt="Python Certificate" class="certificate-image">
-                        <p>View the certificate</p>
-                    </a>
+                    <h3 class="interactive-title">Python - Introduction to Data Science and Machine Learning A-Z</h3>
+                    <p>Issued by: Yassin Marco MBA (Udemy)</p>
+                    <p>Date: August, 2024</p>
+                    <p>Description: Covers Python programming basics and fundamentals of data science.</p>
+                    <a href="#">View the certificate</a>
                 </div>
                 <div class="certificate-card interactive-card">
-                    <div class="certificate-info">
-                        <h3><a href="assets/certificate2.pdf" target="_blank">Data Analysis with R Programming</a></h3>
-                        <p><strong>Issued by:</strong> Google (Coursera)</p>
-                        <p><strong>Date:</strong> June, 2024</p>
-                        <p>Description: Teaches R programming basics and data visualization techniques.</p>
-                    </div>
-                    <a href="assets/certificate2.pdf" target="_blank">
-                        <img src="Coursera.jpeg.jpg" alt="R Programming Certificate" class="certificate-image">
-                        <p>View the certificate</p>
-                    </a>
+                    <h3 class="interactive-title">Data Analysis with R Programming</h3>
+                    <p>Issued by: Google (Coursera)</p>
+                    <p>Date: June, 2024</p>
+                    <p>Description: Teaches R programming basics and data visualization techniques.</p>
+                    <a href="#">View the certificate</a>
                 </div>
                 <div class="certificate-card interactive-card">
-                    <div class="certificate-info">
-                        <h3><a href="assets/certificate3.pdf" target="_blank">Research Internship Program Cohort 4.0</a></h3>
-                        <p><strong>Issued by:</strong> CHIRAL Bangladesh</p>
-                        <p><strong>Date:</strong> March, 2024</p>
-                        <p>Description: Covers Health Research Methodology and Research Data Analysis.</p>
-                    </div>
-                    <a href="assets/certificate3.pdf" target="_blank">
-                        <img src="Research Internship Program Cohort 4.0 Certificate of Md. Mustak Khan.jpg" alt="Research Internship Certificate" class="certificate-image">
-                        <p>View the certificate</p>
-                    </a>
+                    <h3 class="interactive-title">Research Internship Program Cohort 4.0</h3>
+                    <p>Issued by: CHIRAL Bangladesh</p>
+                    <p>Date: March, 2024</p>
+                    <p>Description: Covers Health Research Methodology and Research Data Analysis.</p>
+                    <a href="#">View the certificate</a>
                 </div>
             </div>
         </div>
@@ -176,54 +279,6 @@
             <p>&copy; 2025 Md. Mustak Khan. All rights reserved.</p>
         </div>
     </footer>
-
-    <style>
-        .interactive-title {
-            transition: color 0.3s;
-        }
-        .interactive-title:hover {
-            color: #3f51b5;
-        }
-        .interactive-subtitle {
-            transition: color 0.3s;
-        }
-        .interactive-subtitle:hover {
-            color: #3f51b5;
-        }
-        .interactive-text {
-            transition: background 0.3s;
-            padding: 2px 4px;
-        }
-        .interactive-text:hover {
-            background: #e0e0e0;
-            border-radius: 4px;
-        }
-        .interactive-card {
-            transition: transform 0.3s, box-shadow 0.3s;
-            background-color: #fff;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        .interactive-card:hover {
-            transform: scale(1.05);
-            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-        }
-        .certificate-card {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-        }
-        .certificate-info {
-            flex: 1;
-            padding-right: 20px;
-        }
-        .certificate-image {
-            width: 100px;
-            height: auto;
-            border-radius: 5px;
-        }
-    </style>
 
     <script src="script.js"></script>
 </body>
