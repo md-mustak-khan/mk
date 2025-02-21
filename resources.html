@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resources and Tools - Md. Mustak Khan</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            background-color: #ffffff;
+            font-family: 'Helvetica Neue', sans-serif;
+            color: #333;
+        }
+        
+        .resources-tools-section {
+            padding: 2rem;
+            background: #f8f9fa;
+        }
+        
+        .section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+            color: #333;
+        }
+        
+        .resource-category {
+            margin-bottom: 2rem;
+            padding: 1rem;
+            background: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            max-width: 1100px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .category-title {
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+            color: #007bff;
+            text-align: center;
+        }
+        
+        .resource-list {
+            list-style-type: none;
+            padding: 0;
+            text-align: left;
+        }
+        
+        .resource-item {
+            margin-bottom: 0.5rem;
+            text-align: justify;
+        }
+        
+        .resource-link {
+            color: #007bff;
+            text-decoration: none;
+        }
+        
+        .resource-link:hover {
+            text-decoration: underline;
+        }
+        
+        .resource-card {
+            background: #f8f9fa;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            padding: 1.5rem;
+            transition: box-shadow 0.3s;
+        }
+        
+        .resource-card:hover {
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+        }
+        
+        .card-title {
+            font-size: 1.6rem;
+            margin-bottom: 0.5rem;
+            color: #333;
+        }
+        
+        .card-description {
+            font-size: 1rem;
+            margin-bottom: 1rem;
+            color: #666;
+        }
+        
+        .card-link {
+            color: #007bff;
+            text-decoration: none;
+        }
+        
+        .card-link:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            .resources-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-left">
+                <a href="home.html" class="nav-logo">MK</a>
+                <div class="search-container">
+                    <input type="text" placeholder="Search..." class="search-input">
+                    <button class="search-btn">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="nav-links">
+                <a href="home.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="research.html" class="nav-link">Research</a>
+                <a href="publications.html" class="nav-link active">Publications</a>
+                <a href="people.html" class="nav-link">People</a>
+                <a href="lab-protocols.html" class="nav-link">Lab Protocols</a>
+                <div class="dropdown">
+                    <button class="nav-link dropdown-btn">More
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="resources.html" class="dropdown-link">Resources & Tools</a>
+                        <a href="gallery.html" class="dropdown-link">Gallery</a>
+                    </div>
+                </div>
+                <button id="themeToggle" class="theme-toggle">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+            <button class="mobile-menu">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Resources and Tools Section -->
+    <section class="resources-tools-section">
+        <h1 class="section-title">Resources and Tools</h1>
+        <div class="resource-category">
+            <h2 class="category-title">Literature Review Tools</h2>
+            <ul class="resource-list">
+                <li class="resource-item"><strong><a href="https://unriddle.ai" target="_blank">Unriddle.AI:</a></strong> An AI tool for literature reviews that simplifies reading, extracts key insights, enhances writing, and guides you through complex topics with ease.</li>
+                <li class="resource-item"><strong><a href="https://www.scienceopen.com" target="_blank">ScienceOpen:</a></strong> A free search engine for research papers with citation metrics, altmetrics, and a user-friendly design for exploring scholarly works.</li>
+                <li class="resource-item"><strong><a href="https://www.semanticscholar.org" target="_blank">Semantic Scholar:</a></strong> An AI-powered platform for discovering and analyzing academic papers, offering deep insights into scholarly literature.</li>
+                <li class="resource-item"><strong><a href="https://www.scispace.com" target="_blank">SciSpace:</a></strong> A research tool with 270+ million papers and an AI assistant, Copilot, providing summaries, explanations, and answers to aid comprehension.</li>
+                <li class="resource-item"><strong><a href="https://picoportal.org" target="_blank">PICO Portal:</a></strong> An AI tool designed to streamline systematic reviews by predicting the most relevant articles based on your criteria.</li>
+                <li class="resource-item"><strong><a href="https://elicit.org" target="_blank">Elicit:</a></strong> An AI research assistant that helps in literature review by finding relevant papers, summarizing findings, and extracting key information.</li>
+                <li class="resource-item"><strong><a href="https://www.researchrabbit.com" target="_blank">Research Rabbit:</a></strong> A tool that allows researchers to create collections of papers and visualize the connections between them.</li>
+                <li class="resource-item"><strong><a href="https://consensus.app" target="_blank">Consensus:</a></strong> An AI-powered search engine that finds and summarizes research papers, helping users quickly understand the consensus in scientific literature.</li>
+            </ul>
+        </div>
+        <div class="resource-category">
+            <h2 class="category-title">Free Courses and Tutorials for Research Methods</h2>
+            <ul class="resource-list">
+                <li class="resource-item"><strong><a href="https://www.coursera.org/learn/research-methods" target="_blank">Understanding Research Methods:</a></strong> By Coursera</li>
+                <li class="resource-item"><strong><a href="https://www.adamacademy.com/courses/write-and-publish-a-research-paper" target="_blank">Write and Publish a Research Paper:</a></strong> By Adam Academy</li>
+                <li class="resource-item"><strong><a href="https://www.elsevier.com/en-xm/solutions/research-academy" target="_blank">Fundamentals of Manuscript Preparation:</a></strong> By Elsevier Research Academy</li>
+                <li class="resource-item"><strong><a href="https://www.elsevier.com/en-xm/solutions/research-academy" target="_blank">Writing skills:</a></strong> By Elsevier Research Academy</li>
+                <li class="resource-item"><strong><a href="https://www.elsevier.com/en-xm/solutions/research-academy" target="_blank">Fundamentals of Publishing:</a></strong> By Elsevier Research Academy</li>
+            </ul>
+        </div>
+        <div class="resource-category">
+            <h2 class="category-title">Find Journals</h2>
+            <ul class="resource-list">
+                <li class="resource-item"><strong><a href="https://jane.bio" target="_blank">JANE:</a></strong> A tool that helps you find the most relevant journals for your research based on article titles or abstracts.</li>
+                <li class="resource-item"><strong><a href="https://mjl.clarivate.com" target="_blank">Clarivate Master Journal List:</a></strong> A comprehensive list of journals indexed by Clarivate.</li>
+                <li class="resource-item"><strong><a href="https://www.scopus.com/sources" target="_blank">Scopus Journal Comparison:</a></strong> Allows you to compare journals indexed in Scopus based on various metrics.</li>
+                <li class="resource-item"><strong><a href="https://jotjournal.com" target="_blank">Jot:</a></strong> A tool to help you identify the best journals for submitting your manuscript based on keywords or topics.</li>
+                <li class="resource-item"><strong><a href="https://www.elsevier.com/en-xm/solutions/journal-finder" target="_blank">Elsevier Journal Finder:</a></strong> Helps you find Elsevier journals that match your research topics.</li>
+                <li class="resource-item"><strong><a href="https://www.taylorandfrancis.com/journal-suggester" target="_blank">Taylor & Francis Journal Suggester:</a></strong> Suggests journals from Taylor & Francis based on the title and abstract of your manuscript.</li>
+                <li class="resource-item"><strong><a href="https://thinkchecksubmit.org" target="_blank">Think. Check. Submit:</a></strong> A resource to help you evaluate the trustworthiness of journals.</li>
+                <li class="resource-item"><strong><a href="https://www.wiley.com/en-us/wiley-journal-finder" target="_blank">Wiley Journal Finder:</a></strong> A tool that helps you find Wiley journals by matching your manuscript with relevant journals.</li>
+                <li class="resource-item"><strong><a href="https://www.cabells.com" target="_blank">Cabell's:</a></strong> Provides a directory of journals and their evaluation metrics.</li>
+                <li class="resource-item"><strong><a href="https://www.journal-evaluation-tool.com" target="_blank">Journal Evaluation Tool:</a></strong> A tool for evaluating journals based on multiple performance metrics.</li>
+                <li class="resource-item"><strong><a href="https://sagepub.com/en-us/nam/sage-journal-recommender" target="_blank">Sage Journal Recommender:</a></strong> Suggests Sage journals that are a good fit for your research topic.</li>
+            </ul>
+        </div>
+        <div class="resource-category">
+            <h2 class="category-title">R Package for Data Analysis</h2>
+            <ul class="resource-list">
+                <li class="resource-item"><strong><a href="https://dplyr.tidyverse.org" target="_blank">dplyr:</a></strong> A package for data manipulation, offering functions like filtering, selecting, and summarizing data.</li>
+                <li class="resource-item"><strong><a href="https://tidyr.tidyverse.org" target="_blank">tidyr:</a></strong> Focuses on tidying data, such as reshaping and separating columns.</li>
+                <li class="resource-item"><strong><a href="https://www.tidyverse.org" target="_blank">Tidyverse:</a></strong> A collection of R packages for consistent data analysis and visualization.</li>
+                <li class="resource-item"><strong><a href="https://www.danieldsnyder.com/gtsummary" target="_blank">gtsummary & gt:</a></strong> Used for creating customizable summary tables.</li>
+                <li class="resource-item"><strong><a href="https://ggplot2.tidyverse.org" target="_blank">ggplot2:</a></strong> A powerful visualization package implementing the "grammar of graphics".</li>
+                <li class="resource-item"><strong><a href="https://hrbrmstr.github.io/hrbrthemes" target="_blank">hrbrthemes:</a></strong> Enhances ggplot2 plots with additional themes.</li>
+                <li class="resource-item"><strong><a href="https://colorbrewer2.org" target="_blank">RColorBrewer & viridis:</a></strong> Provide color palettes for data visualization.</li>
+                <li class="resource-item"><strong><a href="https://cran.r-project.org/web/packages/heatmaply/index.html" target="_blank">Heatmaply:</a></strong> Creates interactive heatmaps.</li>
+            </ul>
+        </div>
+        <div class="resource-category">
+            <h2 class="category-title">Free Courses and Tutorials for R Programming</h2>
+            <ul class="resource-list">
+                <li class="resource-item"><strong><a href="https://www.coursera.org/learn/data-analysis-with-r" target="_blank">Data Analysis with R Programming:</a></strong> By Coursera</li>
+                <li class="resource-item"><strong><a href="https://www.coursera.org/learn/r-programming" target="_blank">Introduction to R Programming for Data Science:</a></strong> By Coursera</li>
+                <li class="resource-item"><strong><a href="https://www.coursera.org/specializations/data-visualization" target="_blank">Data Visualization & Dashboarding with R Specialization:</a></strong> By Coursera</li>
+                <li class="resource-item"><strong><a href="https://www.coursera.org/specializations/data-science" target="_blank">Expressway to Data Science: R Programming and Tidyverse Specialization:</a></strong> By Coursera</li>
+                <li class="resource-item"><strong><a href="https://www.coursera.org/specializations/statistical-analysis-r" target="_blank">Statistical Analysis with R for Public Health Specialization:</a></strong> By Coursera</li>
+                <li class="resource-item"><strong><a href="https://chiralscience.com" target="_blank">Mastering R for Research:</a></strong> By CHIRAL Bangladesh [In Bengali Language]</li>
+            </ul>
+        </div>
+        <div class="resource-category">
+            <h2 class="category-title">Data Science Tools</h2>
+            <ul class="resource-list">
+                <li class="resource-item"><strong><a href="https://numpy.org/" target="_blank">NumPy:</a></strong> Foundation for scientific computing, offering support for multidimensional arrays and mathematical operations.</li>
+                <li class="resource-item"><strong><a href="https://pandas.pydata.org/" target="_blank">Pandas:</a></strong> Simplifies data wrangling and analysis, providing powerful tools for handling structured data.</li>
+                <li class="resource-item"><strong><a href="https://matplotlib.org/" target="_blank">Matplotlib:</a></strong> Used for creating static, basic data visualizations.</li>
+                <li class="resource-item"><strong><a href="https://seaborn.pydata.org/" target="_blank">Seaborn:</a></strong> Enhances Matplotlib with advanced statistical visualizations and attractive aesthetics.</li>
+                <li class="resource-item"><strong><a href="https://plotly.com/" target="_blank">Plotly:</a></strong> Enables interactive and dynamic data visualizations.</li>
+                <li class="resource-item"><strong><a href="https://github.com/researchpy/researchpy" target="_blank">researchpy:</a></strong> Data and performs statistical tests efficiently.</li>
+                <li class="resource-item"><strong><a href="https://dask.org/" target="_blank">Dask:</a></strong> Handles big data analysis with parallel computing support.</li>
+                <li class="resource-item"><strong><a href="https://scikit-learn.org/" target="_blank">scikit-learn:</a></strong> A versatile library for machine learning, offering tools for classification, regression, and clustering.</li>
+                <li class="resource-item"><strong><a href="https://scikit-image.org/" target="_blank">scikit-image:</a></strong> Provides tools for image manipulation, especially useful in life sciences.</li>
+            </ul>
+        </div>
+        <div class="resource-category">
+            <h2 class="category-title">Free Courses and Tutorials for Data Science</h2>
+            <ul class="resource-list">
+                <li class="resource-item"><strong><a href="https://www.coursera.org/learn/data-analysis-with-python" target="_blank">Data Analysis with Python:</a></strong> By Coursera</li>
+                <li class="resource-item"><strong><a href="https://www.coursera.org/learn/python-for-applied-data-science-ai" target="_blank">Python for Data Science, AI & Development:</a></strong> By Coursera</li>
+                <li class="resource-item"><strong><a href="https://www.coursera.org/learn/introduction-to-ai" target="_blank">Introduction to Artificial Intelligence (AI):</a></strong> By Coursera</li>
+                <li class="resource-item"><strong><a href="https://www.coursera.org/specializations/machine-learning-introduction" target="_blank">Machine Learning Specialization:</a></strong> By Coursera</li>
+                <li class="resource-item"><strong><a href="https://www.coursera.org/specializations/ai-healthcare" target="_blank">AI in Healthcare Specialization:</a></strong> By Coursera</li>
+                <li class="resource-item"><strong><a href="https://chiralscience.com" target="_blank">Machine Learning for Bioinformatics:</a></strong> By CHIRAL Bangladesh [In Bengali Language]</li>
+            </ul>
+        </div>
+        <div class="resource-category">
+            <h2 class="category-title">Biological Illustration Tools</h2>
+            <ul class="resource-list">
+                <li class="resource-item"><strong><a href="https://www.niaid.nih.gov/research/bioart" target="_blank">BioArt:</a></strong> Hosted by the National Institute of Allergy and Infectious Diseases (NIAID), BioArt provides over 2,000 science and medical visuals, including vectors, icons, and brushes, created by professional illustrators.</li>
+                <li class="resource-item"><strong><a href="https://bioicons.com/" target="_blank">Bioicon:</a></strong> Bioicon offers a collection of high-quality biological icons and illustrations to enhance scientific presentations and educational materials.</li>
+                <li class="resource-item"><strong><a href="https://biorender.com/" target="_blank">BioRender:</a></strong> BioRender's scientific illustration software includes an activity sheet with editable lab icons, enabling users to create publication-quality figures using pre-made icons and templates.</li>
+                <li class="resource-item"><strong><a href="https://scidraw.io/" target="_blank">SciDraw:</a></strong> SciDraw is a platform that offers a variety of scientific drawings, including vectors of cells, animals, and laboratory equipment, contributed by the scientific community.</li>
+                <li class="resource-item"><strong><a href="https://smart.servier.com/" target="_blank">Servier Medical Art (SMART):</a></strong> It offers over 3,000 free, high-quality medical illustrations suitable for publications and presentations. The collection encompasses various medical specialties, including anatomy, cellular biology, and general medical items.</li>
+                <li class="resource-item"><strong><a href="https://reactome.org/" target="_blank">Reactome:</a></strong> Reactome is a free, open-source, curated, and peer-reviewed pathway database that provides insights into molecular processes and pathways in human biology.</li>
+                <li class="resource-item"><strong><a href="https://labicons.net/" target="_blank">LabIcons:</a></strong> LabIcons offers free drawings of laboratory objects to improve knowledge communication in science and education, including clip arts of microcentrifuge tubes, plasticware, instruments, equipment, and glassware.</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Md. Mustak Khan. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
