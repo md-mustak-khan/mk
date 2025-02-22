@@ -9,138 +9,101 @@
     <link rel="stylesheet" href="styles.css">
     <style>
         body {
-            background-color: #f8f9fa;
-            font-family: 'Poppins', sans-serif;
+            background-color: #ffffff;
+            font-family: 'Helvetica Neue', sans-serif;
             color: #333;
-            margin: 0;
-            padding: 0;
         }
-        .navbar {
-            background-color: #fff;
+        
+        .resources-tools-section {
+            padding: 2rem;
+            background: #f8f9fa;
+        }
+        
+        .section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+            color: #333;
+        }
+        
+        .resource-category {
+            margin-bottom: 2rem;
+            padding: 1rem;
+            background: #ffffff;
+            border-radius: 10px;
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-            padding: 10px 20px;
+            max-width: 1100px;
+            margin-left: auto;
+            margin-right: auto;
         }
-        .nav-container {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
+        
+        .category-title {
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+            color: #007bff;
+            text-align: center;
         }
-        .nav-left {
-            display: flex;
-            align-items: center;
+        
+        .resource-list {
+            list-style-type: none;
+            padding: 0;
+            text-align: left;
         }
-        .nav-logo {
-            font-size: 24px;
-            font-weight: bold;
+        
+        .resource-item {
+            margin-bottom: 0.5rem;
+            text-align: justify;
+        }
+        
+        .resource-link {
             color: #007bff;
             text-decoration: none;
-            margin-right: 20px;
         }
-        .search-container {
-            display: flex;
-            align-items: center;
-            background: #f5f5f5;
-            border-radius: 5px;
-            padding: 5px;
+        
+        .resource-link:hover {
+            text-decoration: underline;
         }
-        .search-input {
-            border: none;
-            background: none;
-            padding: 8px;
-            width: 200px;
-            font-size: 14px;
-            outline: none;
+        
+        .resource-card {
+            background: #f8f9fa;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            padding: 1.5rem;
+            transition: box-shadow 0.3s;
         }
-        .search-btn {
-            background: none;
-            border: none;
-            cursor: pointer;
+        
+        .resource-card:hover {
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+        }
+        
+        .card-title {
+            font-size: 1.6rem;
+            margin-bottom: 0.5rem;
+            color: #333;
+        }
+        
+        .card-description {
+            font-size: 1rem;
+            margin-bottom: 1rem;
             color: #666;
         }
-        .nav-links {
-            display: flex;
-            align-items: center;
-        }
-        .nav-link {
-            margin: 0 15px;
+        
+        .card-link {
+            color: #007bff;
             text-decoration: none;
-            color: #333;
-            font-weight: 500;
         }
-        .nav-link:hover {
-            color: #007bff;
+        
+        .card-link:hover {
+            text-decoration: underline;
         }
-        .contact-section {
-            padding: 40px;
-            background-color: #fff;
-            border-radius: 10px;
-            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-            max-width: 800px;
-            margin: 60px auto;
-        }
-        .contact-header {
-            text-align: center;
-            margin-bottom: 20px;
-        }
-        .contact-header h1 {
-            font-size: 2.5rem;
-            color: #007bff;
-        }
-        .social-links {
-            display: flex;
-            justify-content: center;
-            margin-bottom: 30px;
-        }
-        .social-link {
-            margin: 0 10px;
-            text-decoration: none;
-            color: #333;
-            font-size: 20px;
-        }
-        .social-link:hover {
-            color: #007bff;
-        }
-        .contact-form {
-            display: flex;
-            flex-direction: column;
-        }
-        .form-group {
-            margin-bottom: 20px;
-        }
-        .form-group label {
-            margin-bottom: 5px;
-            font-weight: bold;
-        }
-        .form-group input,
-        .form-group textarea {
-            padding: 10px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            font-size: 14px;
-            width: 100%;
-        }
-        .submit-btn {
-            padding: 10px;
-            background-color: #007bff;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            font-size: 16px;
-            transition: background-color 0.3s;
-        }
-        .submit-btn:hover {
-            background-color: #0056b3;
-        }
-        .contact-info {
-            margin-top: 20px;
-            text-align: center;
-        }
-        .contact-info p {
-            margin: 5px 0;
+
+        @media (max-width: 768px) {
+            .resources-grid {
+                grid-template-columns: 1fr;
+            }
         }
     </style>
-</head>
 <body>
     <!-- Navigation -->
     <nav class="navbar">
