@@ -4,106 +4,236 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact - Md. Mustak Khan</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
+        /* General Styles */
         body {
-            background-color: #ffffff;
-            font-family: 'Helvetica Neue', sans-serif;
-            color: #333;
-        }
-        
-        .resources-tools-section {
-            padding: 2rem;
-            background: #f8f9fa;
-        }
-        
-        .section-title {
-            text-align: center;
-            font-size: 2.5rem;
-            margin-bottom: 2rem;
-            color: #333;
-        }
-        
-        .resource-category {
-            margin-bottom: 2rem;
-            padding: 1rem;
-            background: #ffffff;
-            border-radius: 10px;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-            max-width: 1100px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-        
-        .category-title {
-            font-size: 1.8rem;
-            margin-bottom: 1rem;
-            color: #007bff;
-            text-align: center;
-        }
-        
-        .resource-list {
-            list-style-type: none;
+            font-family: Arial, sans-serif;
+            margin: 0;
             padding: 0;
-            text-align: left;
-        }
-        
-        .resource-item {
-            margin-bottom: 0.5rem;
-            text-align: justify;
-        }
-        
-        .resource-link {
-            color: #007bff;
-            text-decoration: none;
-        }
-        
-        .resource-link:hover {
-            text-decoration: underline;
-        }
-        
-        .resource-card {
-            background: #f8f9fa;
-            border: 1px solid #ddd;
-            border-radius: 10px;
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-            padding: 1.5rem;
-            transition: box-shadow 0.3s;
-        }
-        
-        .resource-card:hover {
-            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
-        }
-        
-        .card-title {
-            font-size: 1.6rem;
-            margin-bottom: 0.5rem;
-            color: #333;
-        }
-        
-        .card-description {
-            font-size: 1rem;
-            margin-bottom: 1rem;
-            color: #666;
-        }
-        
-        .card-link {
-            color: #007bff;
-            text-decoration: none;
-        }
-        
-        .card-link:hover {
-            text-decoration: underline;
+            background-color: #f4f4f9;
         }
 
-        @media (max-width: 768px) {
-            .resources-grid {
-                grid-template-columns: 1fr;
-            }
+        /* Navbar Styles */
+        .navbar {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-left {
+            display: flex;
+            align-items: center;
+        }
+
+        .nav-logo {
+            font-size: 24px;
+            font-weight: bold;
+            text-decoration: none;
+            color: #fff;
+            margin-right: 20px;
+        }
+
+        .search-container {
+            display: flex;
+            align-items: center;
+        }
+
+        .search-input {
+            padding: 5px;
+            border: none;
+            border-radius: 3px;
+            margin-right: 5px;
+        }
+
+        .search-btn {
+            background-color: #555;
+            color: #fff;
+            border: none;
+            padding: 5px 10px;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+
+        .search-btn:hover {
+            background-color: #777;
+        }
+
+        .nav-links {
+            display: flex;
+        }
+
+        .nav-link {
+            color: #fff;
+            text-decoration: none;
+            margin-left: 20px;
+            position: relative;
+        }
+
+        .nav-link:hover {
+            color: #ffcc00;
+        }
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-btn {
+            background-color: transparent;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            padding: 10px 20px;
+        }
+
+        .dropdown-btn:hover {
+            color: #ffcc00;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #333;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: #fff;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #555;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        /* Contact Section Styles */
+        .contact-section {
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .contact-container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-header {
+            text-align: center;
+        }
+
+        .contact-header h1 {
+            font-size: 28px;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .contact-header p {
+            font-size: 16px;
+            color: #666;
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        .social-link {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #007bff;
+            display: flex;
+            align-items: center;
+        }
+
+        .social-link:hover {
+            color: #0056b3;
+        }
+
+        .social-link i {
+            margin-right: 5px;
+        }
+
+        .contact-form {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-size: 16px;
+            color: #333;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            font-size: 16px;
+        }
+
+        .form-group textarea {
+            resize: vertical;
+            height: 100px;
+        }
+
+        .submit-btn {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 3px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .submit-btn:hover {
+            background-color: #0056b3;
+        }
+
+        .contact-info {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .contact-info p {
+            margin: 5px 0;
+            font-size: 16px;
+            color: #666;
+        }
+
+        .contact-info i {
+            margin-right: 5px;
         }
     </style>
+</head>
 <body>
     <!-- Navigation -->
     <nav class="navbar">
@@ -137,7 +267,6 @@
             </div>
         </div>
     </nav>
-
     <!-- Contact Section -->
     <section class="contact-section">
         <div class="contact-container"> <!-- New container for the boxed effect -->
@@ -145,7 +274,6 @@
                 <h1>Get in Touch</h1>
                 <p>Feel free to reach out for collaborations, questions, or just to say hello!</p>
             </div>
-
             <div class="social-links">
                 <a href="mailto:mustakkhan.bmb.cu@gmail.com" target="_blank" class="social-link">
                     <i class="fas fa-envelope"></i>
@@ -168,7 +296,6 @@
                     ORCID
                 </a>
             </div>
-
             <form class="contact-form" action="#" method="POST">
                 <div class="form-group">
                     <label for="name">Name</label>
@@ -188,7 +315,6 @@
                 </div>
                 <button type="submit" class="submit-btn">Send Message</button>
             </form>
-
             <div class="contact-info">
                 <p><i class="fas fa-envelope"></i>Email: mustakkhan.bmb.cu@gmail.com</p>
                 <p><i class="fas fa-map-marker-alt"></i>Location: University of Chittagong, Biochemistry and Molecular Biology, Chittagong, Bangladesh</p>
