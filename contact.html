@@ -3,227 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact - Md. Mustak Khan</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Contact Us</title>
     <style>
-        /* Root Variables */
-        :root {
-            --primary-color: #4052b5;
-            --secondary-color: #3f51b5;
-            --background: #ffffff;
-            --text-color: #333;
-            --text-light: #666;
-            --card-bg: #ffffff;
-            --border-color: #e0e0e0;
-            --shadow-color: rgba(0, 0, 0, 0.1);
-        }
-
-        /* Base Styles */
-        * {
+        body {
+            font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            box-sizing: border-box;
+            background-color: #f4f4f4;
         }
-
-        body {
-            font-family: 'Poppins', sans-serif;
-            background: var(--background);
-            color: var(--text-color);
-            line-height: 1.6;
-            scroll-behavior: smooth;
-            padding-top: 70px;
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            background: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+        }
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+        .contact-form {
             display: flex;
             flex-direction: column;
-            min-height: 100vh;
         }
-
-        /* Navbar Styles */
-        .navbar {
-            background: var(--background);
-            box-shadow: 0 2px 4px var(--shadow-color);
-            position: fixed;
+        .contact-form label {
+            font-weight: bold;
+            margin-top: 10px;
+        }
+        .contact-form input, .contact-form textarea {
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
             width: 100%;
-            top: 0;
-            z-index: 1000;
-            display: flex;
-            justify-content: center;
-            padding: 0 1rem;
         }
-
-        .nav-container {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            width: 100%;
-            max-width: 1400px;
-            height: 70px;
-        }
-
-        .nav-logo {
-            font-size: 1.5rem;
-            font-weight: 700;
-            color: var(--primary-color);
-            text-decoration: none;
-        }
-
-        .search-container {
-            display: flex;
-            align-items: center;
-            background: var(--card-bg);
-            border-radius: 20px;
-            padding: 0.5rem 1rem;
-            box-shadow: 0 2px 4px var(--shadow-color);
-        }
-
-        .search-input {
-            background: none;
+        .contact-form button {
+            margin-top: 15px;
+            padding: 10px;
+            background: #28a745;
+            color: white;
             border: none;
-            outline: none;
-            color: var(--text-color);
-            width: 200px;
-            font-size: 0.9rem;
-        }
-
-        .search-btn {
-            background: none;
-            border: none;
-            color: var(--text-light);
             cursor: pointer;
-            padding: 0 0.5rem;
-            transition: color 0.3s;
+            border-radius: 4px;
         }
-
-        .search-btn:hover {
-            color: var(--primary-color);
-        }
-
-        .nav-links {
-            display: flex;
-            gap: 2rem;
-            align-items: center;
-        }
-
-        .nav-link {
-            text-decoration: none;
-            color: var(--text-color);
-            font-weight: 500;
-            transition: color 0.3s;
-        }
-
-        .nav-link:hover {
-            color: var(--primary-color);
-        }
-
-        .dropdown {
-            position: relative;
-            display: inline-block;
-        }
-
-        .dropdown-btn {
-            background: none;
-            border: none;
-            color: var(--text-color);
-            font-size: inherit;
-            cursor: pointer;
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-        }
-
-        .dropdown-content {
-            position: absolute;
-            top: 100%;
-            right: 0;
-            background: var(--card-bg);
-            min-width: 200px;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px var(--shadow-color);
-            opacity: 0;
-            visibility: hidden;
-            transform: translateY(10px);
-            transition: all 0.3s;
-            z-index: 1000;
-        }
-
-        .dropdown:hover .dropdown-content {
-            opacity: 1;
-            visibility: visible;
-            transform: translateY(0);
-        }
-
-        .dropdown-link {
-            display: block;
-            padding: 0.8rem 1.2rem;
-            color: var(--text-color);
-            text-decoration: none;
-            transition: background-color 0.3s;
-        }
-
-        .dropdown-link:hover {
-            background: var(--border-color);
-            color: var(--primary-color);
-        }
-
-        .dark-mode-toggle {
-            background: none;
-            border: none;
-            color: var(--text-color);
-            font-size: 1.2rem;
-            cursor: pointer;
-        }
-
-        /* Responsive Design */
-        @media (max-width: 1024px) {
-            .nav-links {
-                display: none;
-                position: absolute;
-                top: 70px;
-                left: 0;
-                right: 0;
-                flex-direction: column;
-                background: var(--background);
-                padding: 1rem;
-                box-shadow: 0 4px 8px var(--shadow-color);
-                transition: all 0.3s ease-in-out;
-            }
-
-            .nav-links.active {
-                display: flex;
-            }
+        .contact-form button:hover {
+            background: #218838;
         }
     </style>
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="nav-container">
-            <a href="index.html" class="nav-logo">MK</a>
-            <div class="search-container">
-                <input type="text" placeholder="Search..." class="search-input">
-                <button class="search-btn">
-                    <i class="fas fa-search"></i>
-                </button>
-            </div>
-            <div class="nav-links">
-                <a href="index.html" class="nav-link">Home</a>
-                <a href="about.html" class="nav-link">About</a>
-                <a href="research.html" class="nav-link">Research</a>
-                <a href="publications.html" class="nav-link">Publications</a>
-                <a href="people.html" class="nav-link">People</a>
-                <a href="lab-protocols.html" class="nav-link">Lab Protocols</a>
-                <div class="dropdown">
-                    <button class="dropdown-btn">More <i class="fas fa-chevron-down"></i></button>
-                    <div class="dropdown-content">
-                        <a href="resources.html" class="dropdown-link">Resources & Tools</a>
-                        <a href="gallery.html" class="dropdown-link">Gallery</a>
-                        <a href="contact.html" class="dropdown-link">Contact</a>
-                    </div>
-                </div>
-            </div>
-            <button class="dark-mode-toggle">
-                <i class="fas fa-moon"></i>
-            </button>
-        </div>
-    </nav>
+    <div class="container">
+        <h2>Contact Us</h2>
+        <form class="contact-form" action="submit_form.php" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
 </body>
 </html>
