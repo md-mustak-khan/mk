@@ -2,7 +2,7 @@
     /* Light Theme Colors */
     --primary-color: #4052b5;
     --secondary-color: #3f51b5;
-    --background: #ffffff;
+    --background: #f4f4f4;
     --text-color: #333333;
     --text-light: #666666;
     --card-bg: #ffffff;
@@ -62,9 +62,11 @@
 
 body {
     font-family: 'Poppins', sans-serif;
-    background: var(--background);
-    color: var(--text-color);
     line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: var(--background);
+    color: var(--text-color);
     scroll-behavior: smooth;
     padding-top: 70px; /* Adjust this value based on the height of your navbar */
     display: flex;
@@ -101,6 +103,64 @@ body {
 .scroll-to-top:hover {
     transform: translateY(-3px);
     background: var(--secondary-color);
+}
+
+header {
+    background: #35424a;
+    color: #ffffff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav {
+    background: #35424a;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+section {
+    padding: 20px;
+    margin: 20px;
+    background: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #35424a;
+    color: #ffffff;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
 }
 
 @media (max-width: 1024px) {
@@ -290,6 +350,7 @@ body {
     color: var(--text-color);
     text-decoration: none;
     font-weight: 500;
+    font-size: 20px;
     transition: color 0.3s;
 }
 
