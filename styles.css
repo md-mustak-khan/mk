@@ -118,7 +118,13 @@ nav {
     justify-content: center;
     padding: 10px;
 }
-
+.nav-link {
+    color: var(--text-color);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 20px; /* Reverted font size to previous value */
+    transition: color 0.3s;
+}
 nav ul {
     list-style: none;
     padding: 0;
