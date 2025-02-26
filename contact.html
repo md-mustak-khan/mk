@@ -7,151 +7,112 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css">
     <style>
         body {
-            background-color: #ffffff;
-            font-family: 'Helvetica Neue', sans-serif;
+            background-color: #f8f9fa;
+            font-family: 'Poppins', sans-serif;
             color: #333;
+            margin: 0;
+            padding: 0;
         }
         
         .contact-section {
-            padding: 2rem;
-            background: #f8f9fa;
-            max-width: 1100px;
-            margin: auto;
+            padding: 2rem; /* Adjust padding for the contact section */
+            background: #f8f9fa; /* Light background for the section */
             border-radius: 10px;
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            max-width: 800px; /* Set a max width for the contact section */
+            margin: 60px auto; /* Center the section */
         }
-
-        .section-title {
+        
+        .contact-header {
             text-align: center;
+            margin-bottom: 20px;
+        }
+        
+        .contact-header h1 {
             font-size: 2.5rem;
-            margin-bottom: 2rem;
-            color: #333;
+            color: #007bff; /* Primary color for the header */
         }
-
-        .contact-info {
-            text-align: center;
-            font-size: 1.2rem;
-            margin-bottom: 2rem;
+        
+        .social-links {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 30px;
         }
-
-        .contact-form {
-            background: #ffffff;
-            padding: 2rem;
-            border-radius: 10px;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-        }
-
-        .form-group {
-            margin-bottom: 1.5rem;
-        }
-
-        .form-group label {
-            display: block;
-            font-size: 1rem;
-            margin-bottom: 0.5rem;
-            font-weight: 500;
-        }
-
-        .form-group input, 
-        .form-group textarea {
-            width: 100%;
-            padding: 0.8rem;
-            font-size: 1rem;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-        }
-
-        .form-group textarea {
-            resize: vertical;
-            height: 150px;
-        }
-
-        .submit-btn {
-            background: #007bff;
-            color: #fff;
-            border: none;
-            padding: 0.8rem 1.5rem;
-            font-size: 1rem;
-            border-radius: 5px;
-            cursor: pointer;
-            transition: background 0.3s;
-        }
-
-        .submit-btn:hover {
-            background: #0056b3;
-        }
-
-        .dropdown {
-            position: relative;
-            display: inline-block;
-        }
-
-        .dropdown-content {
-            display: none;
-            position: absolute;
-            background-color: #ffffff;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-            border-radius: 5px;
-            min-width: 200px;
-            z-index: 1000;
-        }
-
-        .dropdown:hover .dropdown-content {
-            display: block;
-        }
-
-        .dropdown-link {
-            display: block;
-            padding: 10px;
-            color: #333;
+        
+        .social-link {
+            margin: 0 10px;
             text-decoration: none;
-        }
-
-        .dropdown-link:hover {
-            background-color: #f8f9fa;
-        }
-
-        .theme-toggle {
-            background: none;
-            border: none;
-            font-size: 1.2rem;
-            cursor: pointer;
             color: #333;
+            font-size: 20px;
         }
-
-        .mobile-menu {
-            display: none;
-            background: none;
+        
+        .social-link:hover {
+            color: #007bff; /* Change color on hover */
+        }
+        
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .form-group {
+            margin-bottom: 20px;
+        }
+        
+        .form-group label {
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        
+        .form-group input,
+        .form-group textarea {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 14px;
+            width: 100%;
+        }
+        
+        .submit-btn {
+            padding: 10px;
+            background-color: #007bff; /* Primary button color */
+            color: white;
             border: none;
-            font-size: 1.5rem;
+            border-radius: 5px;
             cursor: pointer;
-            color: #333;
+            font-size: 16px;
+            transition: background-color 0.3s;
         }
-
+        
+        .submit-btn:hover {
+            background-color: #0056b3; /* Darker shade on hover */
+        }
+        
+        .contact-info {
+            margin-top: 20px;
+            text-align: center;
+        }
+        
+        .contact-info p {
+            margin: 5px 0;
+        }
+        
         @media (max-width: 768px) {
             .contact-section {
-                padding: 1rem;
-            }
-
-            .mobile-menu {
-                display: block;
-            }
-
-            .nav-links {
-                display: none;
+                padding: 1rem; /* Adjust padding for smaller screens */
             }
         }
     </style>
 </head>
 <body>
-
     <!-- Navigation -->
     <nav class="navbar">
         <div class="nav-container">
             <div class="nav-left">
-                <a href="home.html" class="nav-logo">MK</a>
+                <a href="index.html" class="nav-logo">MK</a>
                 <div class="search-container">
                     <input type="text" placeholder="Search..." class="search-input">
                     <button class="search-btn">
@@ -160,7 +121,7 @@
                 </div>
             </div>
             <div class="nav-links">
-                <a href="home.html" class="nav-link">Home</a>
+                <a href="index.html" class="nav-link">Home</a>
                 <a href="about.html" class="nav-link">About</a>
                 <a href="research.html" class="nav-link">Research</a>
                 <a href="publications.html" class="nav-link">Publications</a>
@@ -173,57 +134,74 @@
                     <div class="dropdown-content">
                         <a href="resources.html" class="dropdown-link">Resources & Tools</a>
                         <a href="gallery.html" class="dropdown-link">Gallery</a>
-                        <a href="contact.html" class="dropdown-link active">Contact</a>
+                        <a href="contact.html" class="dropdown-link">Contact</a>
                     </div>
                 </div>
                 <button id="themeToggle" class="theme-toggle">
                     <i class="fas fa-moon"></i>
                 </button>
+                <button class="mobile-menu">
+                    <i class="fas fa-bars"></i>
+                </button>
             </div>
-            <button class="mobile-menu">
-                <i class="fas fa-bars"></i>
-            </button>
         </div>
     </nav>
 
     <!-- Contact Section -->
     <section class="contact-section">
-        <h2 class="section-title">Get in Touch</h2>
-        
-        <div class="contact-info">
-            <p><i class="fas fa-envelope"></i> Email: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
-            <p><i class="fas fa-phone"></i> Phone: +123 456 7890</p>
-            <p><i class="fas fa-map-marker-alt"></i> Location: Your City, Your Country</p>
+        <div class="contact-header">
+            <h1>Get in Touch</h1>
+            <p>Feel free to reach out for collaborations, questions, or just to say hello!</p>
         </div>
 
-        <div class="contact-form">
-            <form action="submit_form.php" method="POST">
-                <div class="form-group">
-                    <label for="name">Your Name</label>
-                    <input type="text" id="name" name="name" required>
-                </div>
+        <div class="social-links">
+            <a href="mailto:mustakkhan.bmb.cu@gmail.com" target="_blank" class="social-link">
+                <i class="fas fa-envelope"></i>
+                Email
+            </a>
+            <a href="https://github.com/md-mustak-khan" target="_blank" class="social-link">
+                <i class="fab fa-github"></i>
+                GitHub
+            </a>
+            <a href="https://www.linkedin.com/in/md-mustak-khan" target="_blank" class="social-link">
+                <i class="fab fa-linkedin"></i>
+                LinkedIn
+            </a>
+            <a href="https://twitter.com/md_mustak_khan" target="_blank" class="social-link">
+                <i class="fab fa-twitter"></i>
+                Twitter
+            </a>
+            <a href="https://orcid.org/0009-0002-1472-5953" target="_blank" class="social-link">
+                <i class="fas fa-id-card"></i>
+                ORCID
+            </a>
+        </div>
 
-                <div class="form-group">
-                    <label for="email">Your Email</label>
-                    <input type="email" id="email" name="email" required>
-                </div>
+        <form class="contact-form" action="#" method="POST">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required placeholder="Your name">
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required placeholder="Your email address">
+            </div>
+            <div class="form-group">
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" name="subject" required placeholder="What is this regarding?">
+            </div>
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" required placeholder="Your message"></textarea>
+            </div>
+            <button type="submit" class="submit-btn">Send Message</button>
+        </form>
 
-                <div class="form-group">
-                    <label for="message">Your Message</label>
-                    <textarea id="message" name="message" required></textarea>
-                </div>
-
-                <button type="submit" class="submit-btn">Send Message</button>
-            </form>
+        <div class="contact-info">
+            <p><i class="fas fa-envelope"></i>Email: mustakkhan.bmb.cu@gmail.com</p>
+            <p><i class="fas fa-map-marker-alt"></i>Location: University of Chittagong, Biochemistry and Molecular Biology, Chittagong, Bangladesh</p>
         </div>
     </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <p>&copy; 2025 Md. Mustak Khan. All rights reserved.</p>
-        </div>
-    </footer>
-
+    <script src="script.js"></script>
 </body>
 </html>
