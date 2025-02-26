@@ -122,7 +122,7 @@ nav {
     color: var(--text-color);
     text-decoration: none;
     font-weight: 500;
-    font-size: 18px;
+    font-size: 20px; /* Reverted font size to previous value */
     transition: color 0.3s;
 }
 nav ul {
@@ -295,6 +295,7 @@ footer {
     display: flex;
     align-items: center;
     gap: 2rem;
+    margin-right: 20px; /* Space from the search bar */
 }
 
 .nav-logo {
@@ -839,7 +840,10 @@ footer {
 .certificate-info h3 {
     font-size: 1.5em;
 }
-
-.certificate-info p {
-    font-size: 1em;
+.nav-link {
+    color: var(--text-color);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 18px; /* Ensure font size is set to 20px */
+    transition: color 0.3s;
 }
