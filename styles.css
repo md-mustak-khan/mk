@@ -122,7 +122,7 @@ nav {
     color: var(--text-color);
     text-decoration: none;
     font-weight: 500;
-    font-size: 18px; /* Reverted font size to previous value */
+    font-size: 17px; /* Reverted font size to previous value */
     transition: color 0.3s;
 }
 nav ul {
@@ -132,55 +132,55 @@ nav ul {
     color: var(--text-color);
     text-decoration: none;
     font-weight: 500;
-    font-size: 20px; /* Ensure font size is set to 20px */
+    font-size: 15px; /* Ensure font size is set to 20px */
     transition: color 0.3s;
 }.nav-link {
     color: var(--text-color);
     text-decoration: none;
     font-weight: 500;
-    font-size: 18px; /* Ensure font size is set to 20px */
+    font-size: 15px; /* Ensure font size is set to 20px */
     transition: color 0.3s;
 }.nav-link {
     color: var(--text-color);
     text-decoration: none;
     font-weight: 500;
-    font-size: 18px; /* Ensure font size is set to 20px */
+    font-size: 15px;
     transition: color 0.3s;
 }.nav-link {
     color: var(--text-color);
     text-decoration: none;
     font-weight: 500;
-    font-size: 18px; /* Ensure font size is set to 20px */
+    font-size: 15px; 
     transition: color 0.3s;
 }.nav-link {
     color: var(--text-color);
     text-decoration: none;
     font-weight: 500;
-    font-size: 18px; /* Ensure font size is set to 20px */
+    font-size: 15px; 
     transition: color 0.3s;
 }.nav-link {
     color: var(--text-color);
     text-decoration: none;
     font-weight: 500;
-    font-size: 18px; /* Ensure font size is set to 20px */
+    font-size: 15px; 
     transition: color 0.3s;
 }.nav-link {
     color: var(--text-color);
     text-decoration: none;
     font-weight: 500;
-    font-size: 18px; /* Ensure font size is set to 20px */
+    font-size: 15px; 
     transition: color 0.3s;
 }.nav-link {
     color: var(--text-color);
     text-decoration: none;
     font-weight: 500;
-    font-size: 18px; /* Ensure font size is set to 20px */
+    font-size: 15px; 
     transition: color 0.3s;
 }.nav-link {
     color: var(--text-color);
     text-decoration: none;
     font-weight: 500;
-    font-size: 18px; /* Ensure font size is set to 20px */
+    font-size: 15px; 
     transition: color 0.3s;
 }
 
