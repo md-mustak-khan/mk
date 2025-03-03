@@ -214,21 +214,12 @@
             <p><i class="fas fa-map-marker-alt"></i>Location: University of Chittagong, Biochemistry and Molecular Biology, Chittagong, Bangladesh</p>
         </div>
     </section>
-    <script>
-        const themeToggle = document.getElementById('themeToggle');
-        themeToggle.addEventListener('click', () => {
-            const currentTheme = document.documentElement.getAttribute('data-theme');
-            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
-            document.documentElement.setAttribute('data-theme', newTheme);
-
-            // Change the icon based on the theme
-            if (newTheme === 'dark') {
-                themeToggle.innerHTML = '<i class="fas fa-sun"></i>'; // Sun icon for light mode
-            } else {
-                themeToggle.innerHTML = '<i class="fas fa-moon"></i>'; // Moon icon for dark mode
-            }
-        });
-    </script>
+ <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Md. Mustak Khan. All rights reserved.</p>
+        </div>
+    </footer>
     <script src="script.js"></script>
 </body>
 </html>
