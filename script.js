@@ -82,20 +82,19 @@ scrollButton.addEventListener('click', () => {
 });
 
 // Enhanced mobile menu
-const handleMobileMenu = () => {
+function toggleMenu() {
+    const navLinks = document.querySelector('.nav-links');
     navLinks.classList.toggle('active');
-    const isOpen = navLinks.classList.contains('active');
-    mobileMenuBtn.innerHTML = isOpen ? '<i class="fas fa-times"></i>' : '<i class="fas fa-bars"></i>';
-};
+}
 
-mobileMenuBtn.addEventListener('click', handleMobileMenu);
+mobileMenuBtn.addEventListener('click', toggleMenu);
 
 // Close mobile menu when clicking outside
 document.addEventListener('click', (e) => {
     if (navLinks.classList.contains('active') && 
         !e.target.closest('.nav-links') && 
         !e.target.closest('.mobile-menu')) {
-        handleMobileMenu();
+        toggleMenu();
     }
 });
 
