@@ -846,4 +846,7 @@ footer {
     font-weight: 500;
     font-size: 18px; /* Ensure font size is set to 20px */
     transition: color 0.3s;
+}function toggleMenu() {
+    const navLinks = document.querySelector('.nav-links');
+    navLinks.classList.toggle('active');
 }
