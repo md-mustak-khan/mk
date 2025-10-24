@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab Protocols | Md. Mustak Khan</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles-extended.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html">MK</a>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">About Me</a>
+                </li>
+                <li class="nav-item">
+                    <a href="research.html" class="nav-link">Research</a>
+                </li>
+                <li class="nav-item">
+                    <a href="publications.html" class="nav-link">Publications</a>
+                </li>
+                <li class="nav-item">
+                    <a href="advisor.html" class="nav-link">Advisor</a>
+                </li>
+                <li class="nav-item">
+                    <a href="protocols.html" class="nav-link active">Lab Protocols</a>
+                </li>
+                <li class="nav-item">
+                    <a href="resources.html" class="nav-link">Resources & Tools</a>
+                </li>
+                <li class="nav-item">
+                    <a href="gallery.html" class="nav-link">Gallery</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Lab Protocols</h1>
+            <p>Standardized procedures and methodologies used in my research</p>
+        </div>
+    </section>
+
+    <!-- Protocols Content -->
+    <section class="protocols-content">
+        <div class="container">
+            <div class="protocols-intro">
+                <h2><i class="fas fa-flask"></i> Research Methodologies</h2>
+                <p>This section provides detailed protocols for the experimental procedures commonly used in my research. These protocols have been standardized and optimized for reproducibility and reliability.</p>
+            </div>
+
+            <div class="protocol-categories">
+                <h3><i class="fas fa-filter"></i> Filter by Category</h3>
+                <div class="category-filters">
+                    <button class="category-btn active" data-category="all">All Protocols</button>
+                    <button class="category-btn" data-category="media">Growth Media</button>
+                    <button class="category-btn" data-category="c-elegans">C. elegans Handling</button>
+                    <button class="category-btn" data-category="transfer">Worm Transfer</button>
+                </div>
+            </div>
+
+            <div class="protocols-list">
+                <div class="protocol-item media">
+                    <div class="protocol-header">
+                        <h3><i class="fas fa-vial"></i> Preparation of Growth Media</h3>
+                        <span class="protocol-meta">
+                            <span class="date">Last Updated: June 2024</span>
+                            <span class="difficulty">Intermediate</span>
+                        </span>
+                    </div>
+                    <div class="protocol-summary">
+                        <h4>1. Preparation of Bacterial Food Source</h4>
+                        <p>Although C. elegans can be maintained axenically, this method is difficult and results in slow growth. In most laboratories, C. elegans is maintained monoxenically using E. coli strain OP50 as a food source (Brenner, 1974).</p>
+                        <p>OP50 is a uracil auxotroph, which limits its growth on NGM plates. A thin bacterial lawn is ideal for clear observation and efficient mating.</p>
+                        
+                        <h5>Preparation Steps:</h5>
+                        <ol>
+                            <li>Obtain a starter culture of E. coli OP50 from the CGC or recover it from existing worm plates.</li>
+                            <li>Streak the culture onto an LB agar plate:
+                                <ul>
+                                    <li>LB Agar Composition (per liter):
+                                        <ul>
+                                            <li>10 g Bacto-tryptone</li>
+                                            <li>5 g Bacto-yeast extract</li>
+                                            <li>5 g NaCl</li>
+                                            <li>15 g agar</li>
+                                            <li>Adjust pH to 7.5 with NaOH</li>
+                                        </ul>
+                                    </li>
+                                    <li>Incubate overnight at 37 °C.</li>
+                                </ul>
+                            </li>
+                            <li>Using a single colony, aseptically inoculate L Broth:
+                                <ul>
+                                    <li>L Broth Composition (per liter):
+                                        <ul>
+                                            <li>10 g Bacto-tryptone</li>
+                                            <li>5 g Bacto-yeast extract</li>
+                                            <li>5 g NaCl</li>
+                                            <li>Adjust pH to 7.0 with 1 M NaOH</li>
+                                        </ul>
+                                    </li>
+                                    <li>Dispense 100 ml into 250 ml screw-cap bottles.</li>
+                                    <li>Autoclave and store at room temperature for several months.</li>
+                                    <li>Incubate the inoculated broth overnight at 37 °C.</li>
+                                </ul>
+                            </li>
+                            <li>The resulting E. coli OP50 culture is now ready for seeding NGM plates.</li>
+                            <li>Store both streak plates and liquid cultures at 4 °C; they remain usable for several months.</li>
+                        </ol>
+                        
+                        <h4>2. Preparation of NGM Petri Plates</h4>
+                        <p>C. elegans is routinely maintained on Nematode Growth Medium (NGM) agar (Brenner, 1974), poured aseptically into sterile petri plates.</p>
+                        
+                        <h5>Plate Size and Use:</h5>
+                        <table>
+                            <tr>
+                                <th>Plate</th>
+                                <th>Size Diameter</th>
+                                <th>Common Use</th>
+                            </tr>
+                            <tr>
+                                <td>Small</td>
+                                <td>35 mm</td>
+                                <td>Matings or assays using costly reagents</td>
+                            </tr>
+                            <tr>
+                                <td>Medium</td>
+                                <td>60 mm</td>
+                                <td>General strain maintenance</td>
+                            </tr>
+                            <tr>
+                                <td>Large</td>
+                                <td>100 mm</td>
+                                <td>Large cultures or mutant screens</td>
+                            </tr>
+                        </table>
+                        
+                        <h5>Equipment and Reagents:</h5>
+                        <ul>
+                            <li>NaCl</li>
+                            <li>Agar</li>
+                            <li>Peptone</li>
+                            <li>5 mg/ml cholesterol in ethanol (do not autoclave)</li>
+                            <li>1 M KPO₄ buffer, pH 6.0
+                                <ul>
+                                    <li>108.3 g KH₂PO₄</li>
+                                    <li>35.6 g K₂HPO₄</li>
+                                    <li>H₂O to 1 L</li>
+                                </ul>
+                            </li>
+                            <li>1 M MgSO₄</li>
+                            <li>1 M CaCl₂</li>
+                            <li>Petri plates</li>
+                            <li>Peristaltic pump</li>
+                        </ul>
+                        
+                        <h5>Procedure:</h5>
+                        <ol>
+                            <li>Combine in a 2 L Erlenmeyer flask:
+                                <ul>
+                                    <li>3 g NaCl</li>
+                                    <li>17 g agar</li>
+                                    <li>2.5 g peptone</li>
+                                    <li>975 ml distilled H₂O</li>
+                                </ul>
+                            </li>
+                            <li>Cover with aluminum foil and autoclave for 50 minutes.</li>
+                            <li>Cool flask in a 55 °C water bath for 15 minutes.</li>
+                            <li>Add (sterile):
+                                <ul>
+                                    <li>1 ml 1 M CaCl₂</li>
+                                    <li>1 ml 5 mg/ml cholesterol</li>
+                                    <li>1 ml 1 M MgSO₄</li>
+                                    <li>25 ml 1 M KPO₄ buffer</li>
+                                </ul>
+                            </li>
+                            <li>Swirl gently to mix.</li>
+                            <li>Dispense aseptically into petri plates using the peristaltic pump (fill plates about ⅔ full).</li>
+                            <li>Leave plates at room temperature for 2–3 days to check for contamination and allow moisture to evaporate.</li>
+                            <li>Store plates in an air-tight container at room temperature; they remain usable for several weeks.</li>
+                        </ol>
+                        
+                        <h4>3. Seeding NGM Plates</h4>
+                        <p>Using sterile technique, apply E. coli OP50 culture onto solidified NGM plates.</p>
+                        
+                        <h5>Procedure:</h5>
+                        <ol>
+                            <li>Pipette:
+                                <ul>
+                                    <li>0.05 ml OP50 culture for small or medium plates, or</li>
+                                    <li>0.1 ml for large plates.</li>
+                                </ul>
+                            </li>
+                            <li>Optionally, spread the drop using a pipette tip or sterile glass rod to create a uniform lawn (avoid edges).</li>
+                            <li>Keeping the lawn centered prevents worms from crawling up the plate sides and drying out.</li>
+                            <li>Allow plates to dry overnight at room temperature or incubate at 37 °C for 8 hours (then cool before use).</li>
+                            <li>Store seeded plates in an air-tight container; they remain usable for 2–3 weeks.</li>
+                        </ol>
+                    </div>
+                </div>
+                
+                <div class="protocol-item c-elegans">
+                    <div class="protocol-header">
+                        <h3><i class="fas fa-worm"></i> Culturing C. elegans on Petri Plates</h3>
+                        <span class="protocol-meta">
+                            <span class="date">Last Updated: June 2024</span>
+                            <span class="difficulty">Beginner</span>
+                        </span>
+                    </div>
+                    <div class="protocol-summary">
+                        <p>C. elegans is transparent and can be visualized using a dissecting stereomicroscope with a transmitted light source. Common models include the Wild Leitz M5A and Zeiss SV6, equipped with 10× eyepieces and objectives ranging from 0.6× to 5× (total magnification of 6×–50×).</p>
+                    </div>
+                </div>
+                
+                <div class="protocol-item transfer">
+                    <div class="protocol-header">
+                        <h3><i class="fas fa-exchange-alt"></i> Transferring Worms Grown on NGM Plates</h3>
+                        <span class="protocol-meta">
+                            <span class="date">Last Updated: June 2024</span>
+                            <span class="difficulty">Beginner</span>
+                        </span>
+                    </div>
+                    <div class="protocol-summary">
+                        <h4>1. Picking Individual Worms</h4>
+                        <p>For precision transfers or when maintaining genetic stocks.</p>
+                        
+                        <h5>Equipment:</h5>
+                        <ul>
+                            <li>Worm picker made from a 1-inch piece of 32-gauge platinum wire, mounted in a Pasteur pipette or loop holder.</li>
+                            <li>The wire heats and cools quickly, allowing frequent flaming for sterilization.</li>
+                        </ul>
+                        
+                        <h5>Tips:</h5>
+                        <ul>
+                            <li>Flatten or slightly bend the wire tip to form a small hook—avoid sharp points.</li>
+                            <li>To pick a worm, gently touch the side of the worm with the wire tip and lift.</li>
+                            <li>Alternatively, pick up a small blob of E. coli OP50 on the wire first; worms will stick to the bacteria.</li>
+                            <li>To transfer, gently touch the picker to the new plate's surface and wait for the worm to crawl off.</li>
+                        </ul>
+                        
+                        <h4>2. Chunking Method</h4>
+                        <p>A quick and convenient way to transfer large numbers of worms.</p>
+                        
+                        <h5>Procedure:</h5>
+                        <ol>
+                            <li>Use a sterilized scalpel or spatula to cut and move a small chunk of agar (containing worms) from an old plate to a fresh NGM plate.</li>
+                            <li>The worms will crawl out of the agar chunk and spread onto the new bacterial lawn.</li>
+                        </ol>
+                        
+                        <h5>Notes:</h5>
+                        <ul>
+                            <li>Ideal for homozygous stocks or starved plates.</li>
+                            <li>Not recommended for heterozygous or mating stocks, as mixed genotypes can be transferred.</li>
+                        </ul>
+                        
+                        <h5>References:</h5>
+                        <p>WormBook: The Online Review of C. elegans Biology</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="protocol-request">
+                <h2><i class="fas fa-envelope"></i> Request a Protocol</h2>
+                <p>If you need a specific protocol that is not listed here, please contact me directly.</p>
+                <a href="contact.html" class="btn primary-btn">Contact for Protocols</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>Navigation</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Me</a></li>
+                        <li><a href="research.html">Research</a></li>
+                        <li><a href="publications.html">Publications</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Resources</h3>
+                    <ul>
+                        <li><a href="protocols.html">Lab Protocols</a></li>
+                        <li><a href="resources.html">Tools & Resources</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Contact</h3>
+                    <ul>
+                        <li><a href="contact.html">Contact Information</a></li>
+                        <li><a href="advisor.html">Advisor</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Md. Mustak Khan. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Protocol category filtering
+        document.addEventListener('DOMContentLoaded', function() {
+            const categoryButtons = document.querySelectorAll('.category-btn');
+            const protocolItems = document.querySelectorAll('.protocol-item');
+            
+            categoryButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    // Remove active class from all buttons
+                    categoryButtons.forEach(btn => btn.classList.remove('active'));
+                    // Add active class to clicked button
+                    button.classList.add('active');
+                    
+                    const category = button.getAttribute('data-category');
+                    
+                    protocolItems.forEach(item => {
+                        if (category === 'all' || item.classList.contains(category)) {
+                            item.style.display = 'block';
+                        } else {
+                            item.style.display = 'none';
+                        }
+                    });
+                });
+            });
+        });
+    </script>
+</body>
+</html>
