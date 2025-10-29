@@ -16,13 +16,6 @@ The website consists of the following pages:
 8. **Gallery** ([gallery.html](gallery.html)) - Visual documentation of research activities
 9. **Contact** ([contact.html](contact.html)) - Contact information and form
 
-## Recent Improvements
-
-- Added profile photo to the Cover Section
-- Improved Bio Information Section with balanced text alignment and borders
-- Enhanced responsive design for all screen sizes
-- Properly implemented X (Twitter) account symbol
-
 ## Technical Features
 
 - Responsive design that works on mobile, tablet, and desktop
@@ -60,4 +53,5 @@ To customize the content:
    - `images/profile-placeholder.jpg` - Your profile photo
    - `images/cover-placeholder.jpg` - Cover background image
 3. Modify styles in `styles.css` and `styles-extended.css` if needed
+
 4. Update JavaScript functionality in `script.js` as required
