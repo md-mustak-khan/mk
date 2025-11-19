@@ -1,9 +1,6 @@
 # Research Portfolio Website - Md. Mustak Khan
 
 [![GitHub Pages](https://img.shields.io/badge/GitHub-Pages-blue?logo=github)](https://md-mustak-khan.github.io)  
-[![HTML5](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/HTML)  
-[![CSS3](https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/CSS)  
-[![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 
 This is a professional **research portfolio website** for **Md. Mustak Khan**, a researcher in **Biochemistry and Molecular Biology** at the **University of Chittagong**. The website showcases his academic profile, research projects, publications, lab resources, and more.
 
@@ -37,7 +34,6 @@ The website consists of the following pages:
 - **CSS3** for styling and responsive design  
 - **JavaScript** for interactive features  
 - **GitHub Pages** for free hosting  
-- Optional: **Jekyll** if you decide to convert it to a static site generator in the future  
 
 ---
 
@@ -47,5 +43,6 @@ The website consists of the following pages:
 This repository is open for viewing and use for academic purposes. Please contact **Md. Mustak Khan** for permissions regarding reuse or modification of content.
 
 ---
+
 
 
