@@ -1,57 +1,51 @@
 # Research Portfolio Website - Md. Mustak Khan
 
-This is a professional research portfolio website for Md. Mustak Khan, a researcher in Biochemistry and Molecular Biology at the University of Chittagong.
+[![GitHub Pages](https://img.shields.io/badge/GitHub-Pages-blue?logo=github)](https://md-mustak-khan.github.io)  
+[![HTML5](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/HTML)  
+[![CSS3](https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/CSS)  
+[![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 
-## Website Structure
+This is a professional **research portfolio website** for **Md. Mustak Khan**, a researcher in **Biochemistry and Molecular Biology** at the **University of Chittagong**. The website showcases his academic profile, research projects, publications, lab resources, and more.
+
+---
+
+## 🌐 Live Demo
+
+Access the live website here: [https://md-mustak-khan.github.io](https://md-mustak-khan.github.io)
+
+---
+
+## 🏗 Website Structure
 
 The website consists of the following pages:
 
-1. **Home Page** ([index.html](index.html)) - Main landing page with introduction
-2. **About Me** ([about.html](about.html)) - Detailed biography and background
-3. **Research** ([research.html](research.html)) - Research interests and projects
-4. **Publications** ([publications.html](publications.html)) - Academic publications and papers
-5. **Advisor** ([advisor.html](advisor.html)) - Information about research advisor
-6. **Lab Protocols** ([protocols.html](protocols.html)) - Laboratory procedures and methodologies
-7. **Resources & Tools** ([resources.html](resources.html)) - Curated list of research tools
-8. **Gallery** ([gallery.html](gallery.html)) - Visual documentation of research activities
-9. **Contact** ([contact.html](contact.html)) - Contact information and form
+1. **Home Page** ([index.html](index.html)) - Main landing page with introduction.  
+2. **About Me** ([about.html](about.html)) - Detailed biography and background.  
+3. **Research** ([research.html](research.html)) - Research interests and projects.  
+4. **Publications** ([publications.html](publications.html)) - Academic publications and papers.  
+5. **Advisor** ([advisor.html](advisor.html)) - Information about research advisor.  
+6. **Lab Protocols** ([protocols.html](protocols.html)) - Laboratory procedures and methodologies.  
+7. **Resources & Tools** ([resources.html](resources.html)) - Curated list of research tools.  
+8. **Gallery** ([gallery.html](gallery.html)) - Visual documentation of research activities.  
+9. **Contact** ([contact.html](contact.html)) - Contact information and form for inquiries.
 
-## Technical Features
+---
 
-- Responsive design that works on mobile, tablet, and desktop
-- Modern CSS with flexbox and grid layouts
-- Dynamic JavaScript for interactive elements
-- Font Awesome icons for visual enhancement
-- Consistent navigation across all pages
+## 🛠 Tech Stack
 
-## Files
+- **HTML5** for website structure  
+- **CSS3** for styling and responsive design  
+- **JavaScript** for interactive features  
+- **GitHub Pages** for free hosting  
+- Optional: **Jekyll** if you decide to convert it to a static site generator in the future  
 
-- `index.html` - Home page
-- `about.html` - About page
-- `research.html` - Research page
-- `publications.html` - Publications page
-- `advisor.html` - Advisor page
-- `protocols.html` - Lab protocols page
-- `resources.html` - Resources page
-- `gallery.html` - Gallery page
-- `contact.html` - Contact page
-- `styles.css` - Main stylesheet
-- `styles-extended.css` - Additional page-specific styles
-- `script.js` - JavaScript functionality
-- `images/` - Directory for images
-- `images/gallery/` - Directory for gallery images
+---
 
-## How to View
 
-Simply open `index.html` in any modern web browser to view the website.
+## 📜 License
 
-## Customization
+This repository is open for viewing and use for academic purposes. Please contact **Md. Mustak Khan** for permissions regarding reuse or modification of content.
 
-To customize the content:
-1. Edit the HTML files to update text content
-2. Replace placeholder images in the `images/` directory with your actual photos:
-   - `images/profile-placeholder.jpg` - Your profile photo
-   - `images/cover-placeholder.jpg` - Cover background image
-3. Modify styles in `styles.css` and `styles-extended.css` if needed
+---
 
-4. Update JavaScript functionality in `script.js` as required
+
